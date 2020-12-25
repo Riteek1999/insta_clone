@@ -10,3 +10,7 @@
   border: 1px solid lightgray;
   background-color: white;
 }
+.app_signUp{
+  display: flex;
+  flex-direction: column;
+}
