@@ -71,7 +71,7 @@ function App() {
         auth
         .createUserWithEmailAndPassword(email,password)
         .then((authUser)=>{
-          return authUser.user.displayNameupdateProfile({
+          return authUser.user.updateProfile({
             displayName: username,
           })
         })
@@ -132,7 +132,14 @@ function App() {
         />
         
       </div>
-       <Button onClick={()=>setOpen(true)}>Sign up</Button>
+      {
+        user ? (
+          <Button onClick={() => auth.signOut()}>Logout</Button>
+        ):(
+          <Button onClick={() => setOpen(true)}>Sign up</Button>
+        )}
+       
+
             { posts.map(({id,post})=>(
                 <Post key={id} username={post.username} caption={post.caption} imageUrl={post.imageUrl}/>
             ))
