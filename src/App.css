@@ -9,8 +9,25 @@
   padding: 20px;
   border: 1px solid lightgray;
   background-color: white;
+  display:flex;
+  justify-content:space-between;
 }
 .app_signUp{
+  display:flex;
+  flex-direction:column;
+}
+.app_signIn{
+  display:flex;
+  flex-direction:column;
+}
+.app_headerImage{
+  object-fit: contain;
+}
+.app_posts{
+  padding:20px;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+}
+.app_postsRigth{
+  margin-left: 20px;
 }
