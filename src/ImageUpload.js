@@ -61,7 +61,7 @@ function ImageUpload ({username})     //the username passed in app.js is receive
     }
 
     return (
-        <div className="Imageupload">
+        <div className="imageupload">
             <progress className="imageupload_progress"  value={progress}  max="100"/>
             <input type="text" placeholder = "enter your text"  value = {caption} onChange={event=> setCaption(event.target.value)}  />
             <input type= "file"  onChange= {handleChange} />
